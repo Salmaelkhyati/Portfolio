@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Salma elkhyati</title>
+    <style>
+        /* Styles globaux */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        /* En-tête */
+        header {
+            display: flex;
+            align-items: center;
+            padding: 2rem;
+            background-color: #f2f2f2;
+        }
+
+        header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-right: 2rem;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            color: #d34856;
+        }
+
+        header p {
+            margin-top: 0.5rem;
+            font-size: 1rem;
+            color: #666;
+        }
+
+        /* Galerie de projets */
+        .portfolio-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            padding: 2rem;
+        }
+
+        .portfolio-item {
+            width: 30%;
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .portfolio-item:hover {
+            transform: scale(1.05);
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .portfolio-item h3 {
+            padding: 1rem;
+            background-color: #333;
+            color: #fff;
+        }
+
+        /* Citation ou témoignage */
+        .testimonial-section {
+            background-color: #333;
+            color: #fff;
+            padding: 2rem;
+            text-align: center;
+            font-style: italic;
+        }
+
+        .testimonial-section p {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .testimonial-section h4 {
+            font-size: 1rem;
+            font-weight: normal;
+            color: #d34856;
+        }
+
+        /* Pied de page */
+        footer {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #d34856;
+            color: #fff;
+            padding: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-info, .footer-form {
+            width: 45%;
+        }
+
+        .footer-info h3, .footer-form h3 {
+            margin-bottom: 1rem;
+        }
+
+        .footer-info p {
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-info a {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            background-color: #fff;
+            color: #d34856;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+
+        .footer-form input, .footer-form textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: none;
+            border-radius: 4px;
+        }
+
+        .footer-form button {
+            width: 100%;
+            padding: 0.5rem;
+            background-color: #fff;
+            color: #d34856;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- En-tête -->
+    <header>
+        <img src="profil.jpg" alt="photo_profil.jpg">
+        <div>
+            <h1>Salma Elkhyati</h1>
+            <h1>Bienvenue dans mon Portfolio</h1>
+            <p>dessinatrice de batiment & digital freelance, Créative, motivée,.</p>
+        </div>
+    </header>
+
+    <!-- Galerie de projets -->
+    <section class="portfolio-section">
+        <div class="portfolio-item">
+            <img src="Image5_000.png" alt="Projet 1">
+            <h3>Projet 1</h3>
+        </div>
+        <div class="portfolio-item">
+            <img src="Image7.png"alt="Projet 2">
+            <h3>Projet 2</h3>
+        </div>
+        <div class="portfolio-item">
+            <img src="Image1_001.png" alt="Projet 3">
+            <h3>Projet 3</h3>
+        </div>
+        <div class="portfolio-item">
+            <img src="Image5.png" alt="Projet 4">
+            <h3>Projet 4</h3>
+        </div>
+        <div class="portfolio-item">
+            <img src="Image1.png" alt="Projet 5">
+            <h3>Projet 5</h3>
+        </div>
+        <div class="portfolio-item">
+            <img src="Image2_000.png" alt="Projet 6">
+            <h3>Projet 6</h3>
+        </div>
+    </section>
+
+    <!-- Citation ou témoignage -->
+    <section class="testimonial-section">
+        <p>"Bienvenue sur mon portfolio !je suis Diplômé en dessin de bâtiments et fort de plusieurs expériences professionnelles dans le domaine de la construction, je suis passionné par la création et la conception de projets architecturaux. Au fil des années, j'ai développé des compétences en modélisation 3D et en gestion de projet, avec une expertise sur des outils tels que SketchUp et Autocad et Archicad. Je vous invite à découvrir mon parcours et mes réalisations, et je reste à votre disposition pour toute opportunité de collaboration."</p>
+        <h4>dessinatrice, desing</h4>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <div class="footer-info">
+            <h3>SALMA ELKHYATI</h3>
+            <p>32 printemps<br>Bordeaux<br>salma.elkhyati@uit.ac.ma</p>
+            <a href="cv salma elkhyati.pdf">Télécharger mon CV</a>
+        </div>
+        <div class="footer-form">
+            <h3>Un petit mot doux ?</h3>
+            <form>
+                <input type="text" placeholder="Elkhyati/Salma">
+                <input type="email" placeholder="salma.elkhyati@uit.ac.ma">
+                <textarea placeholder="Message"></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+    </footer>
+
+</body>
+</html>
